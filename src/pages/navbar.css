@@ -1,0 +1,579 @@
+.navbar {
+  width: auto;
+  height: auto;
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05), inset 0 1px 0 #ffffff;
+  padding: 10px 14px;
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+
+
+.logo-box {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: #4d82ee;
+  color: white;
+
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.logo-text {
+  color: #1a1512;
+
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+
+/* DESKTOP NAV */
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-link {
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 20px;
+  border-radius: 23px;
+  color: #1a1512;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.nav-link svg {
+  font-size: 20px;
+}
+
+
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.nav-link.active {
+  color: #f0ecea;
+  background: #1a1512;
+  box-shadow: 0 4px 15px rgba(26, 21, 18, 0.2);
+}
+
+.nav-link.active svg {
+  color: #ff8c42;
+}
+
+.nav-link:not(.active) span {
+  display: none;
+}
+
+
+/* RIGHT */
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+/* ICON BUTTON */
+
+.nav-dropdown,
+.account-dropdown {
+  position: relative;
+}
+
+.icon-button {
+  width: 46px;
+  height: 46px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.5);
+  color: #1a1512;
+  transition: 0.2s ease;
+}
+
+.icon-button svg {
+  font-size: 20px;
+}
+
+.icon-button:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: #ff8c42;
+  border-color: #ffffff;
+}
+
+.notification-dot {
+  width: 7px;
+  height: 7px;
+
+  position: absolute;
+  right: 8px;
+  top: 8px;
+
+  border-radius: 50%;
+
+  background: #ff8c42;
+  border: 2px solid #10161e;
+}
+
+
+/* ACCOUNT */
+
+.account-button {
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  margin-left: 7px;
+  padding: 4px 8px 4px 5px;
+
+  border: 1px solid #202a35;
+  border-radius: 9px;
+
+  background: #0b1016;
+  color: white;
+}
+
+.account-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.account-avatar {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: #263d66;
+  color: #9ec0ff;
+
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.account-avatar.large {
+  width: 42px;
+  height: 42px;
+}
+
+.account-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.account-info strong {
+  color: #fdfaf8;
+  font-size: 13px;
+}
+.account-button:hover .account-info strong {
+  color: #030936;
+  font-size: 13px;
+ 
+}
+.account-button:hover  {
+  border: none;
+  background-color: #e0dcdc;
+ 
+}
+
+.account-info small {
+  color: #7d8997;
+  font-size: 10px;
+}
+
+.account-button>svg {
+  color: #7d8997;
+  font-size: 14px;
+}
+
+
+/* DROPDOWNS */
+
+.dropdown-panel {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 330px;
+  border-radius: 20px;
+  overflow: hidden;
+
+  background: #0b1016;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-title {
+  padding: 16px 18px;
+  color: #fdfaf8;
+  font-size: 14px;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+/* NOTIFICATIONS */
+
+.notification-item {
+  display: flex;
+  gap: 12px;
+  padding: 14px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.notification-item:last-child {
+  border-bottom: 0;
+}
+
+.notification-item strong,
+.message-item strong {
+  display: block;
+  color: #fdfaf8;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.notification-item small,
+.message-item small {
+  display: block;
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 11px;
+}
+
+.notification-icon {
+  width: 34px;
+  height: 34px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+}
+
+.notification-icon.blue {
+  color: #6f9fff;
+  background: rgba(111, 159, 255, 0.15);
+}
+
+.notification-icon.green {
+  color: #72d6a1;
+  background: rgba(114, 214, 161, 0.15);
+}
+
+.notification-icon.orange {
+  color: #e7aa62;
+  background: #332719;
+}
+
+
+/* MESSAGE */
+
+.message-item {
+  display: flex;
+  gap: 12px;
+  padding: 14px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.message-avatar {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #27344b;
+  color: #9dbbff;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+
+/* ACCOUNT PANEL */
+
+.account-panel {
+  width: 260px;
+}
+
+.account-header {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 17px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.account-header strong {
+  display: block;
+
+  color: white;
+  font-size: 13px;
+}
+
+.account-header small {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #788594;
+  font-size: 11px;
+}
+
+.account-menu {
+  padding: 7px;
+}
+
+.account-menu button {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 11px;
+
+  border: 0;
+  border-radius: 7px;
+
+  background: transparent;
+  color: #a2adba;
+
+  text-align: left;
+
+  font-size: 12px;
+}
+
+.account-menu button:hover {
+  background: #18212b;
+  color: white;
+}
+
+.account-menu button svg {
+  font-size: 16px;
+}
+
+.account-menu .logout {
+  color: #e27878;
+}
+
+
+/* MOBILE */
+
+.mobile-menu-button {
+  display: none;
+
+  width: 42px;
+  height: 42px;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #202a35;
+  border-radius: 8px;
+
+  background: transparent;
+  color: #1a1512;
+}
+
+.mobile-menu-button svg {
+  font-size: 20px;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+
+/* 950 */
+
+@media (max-width: 950px) {
+
+  .desktop-nav {
+    margin-left: 20px;
+  }
+
+  .nav-link {
+    padding: 0 10px;
+  }
+
+  .nav-link span {
+    display: none;
+  }
+
+  .nav-link {
+    width: 42px;
+    justify-content: center;
+  }
+
+  .account-info,
+  .account-button>svg {
+    display: none;
+  }
+
+}
+
+
+/* 700 */
+
+@media (max-width: 700px) {
+
+  .navbar {
+    height: 64px;
+  }
+
+  .navbar-inner {
+    padding: 0 16px;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .navbar-right {
+    margin-left: auto;
+  }
+
+  .mobile-menu-button {
+    display: flex;
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px 16px 16px;
+
+    background: #0b1016;
+    border-bottom: 1px solid rgba(26, 21, 18, 0.05);
+  }
+
+  .mobile-nav-link {
+    min-height: 46px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 0 13px;
+
+    border-radius: 8px;
+
+    color: #8f9baa;
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .mobile-nav-link:hover {
+    background: #151e27;
+    color: white;
+  }
+
+  .mobile-nav-link.active {
+    background: #202b39;
+    color: white;
+  }
+
+  .mobile-nav-link.active svg {
+    color: #4d82ee;
+  }
+
+  .dropdown-panel {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 330px;
+  border-radius: 20px;
+  overflow: hidden;
+
+  background: #0b1016;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+}
+
+
+/* 420 */
+
+@media (max-width: 420px) {
+
+  .logo-text {
+    font-size: 16px;
+  }
+
+  .logo-box {
+    width: 34px;
+    height: 34px;
+  }
+
+  .account-button {
+    margin-left: 0;
+  }
+
+  .navbar-right {
+    gap: 5px;
+  }
+
+  .icon-button,
+  .mobile-menu-button {
+    width: 38px;
+    height: 38px;
+  }
+
+}
