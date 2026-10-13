@@ -330,7 +330,7 @@
   background: rgba(244 210 186 / 9%);
   color: #1a1512;
   transition: 0.2s;
-  box-shadow: inset 2px -2px 1px -1px rgba(255, 255, 255, 0.9), inset -2px 2px 1px -1px rgba(255, 255, 255, 0.9), inset 6px -6px 1px -6px rgba(255, 255, 255, 0.55), inset -6px 6px 1px -6px rgba(255, 255, 255, 0.8), inset 0 0 2px rgba(0, 0, 0, 1), 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+  /* box-shadow: inset 2px -2px 1px -1px rgba(255, 255, 255, 0.9), inset -2px 2px 1px -1px rgba(255, 255, 255, 0.9), inset 6px -6px 1px -6px rgba(255, 255, 255, 0.55), inset -6px 6px 1px -6px rgba(255, 255, 255, 0.8), inset 0 0 2px rgba(0, 0, 0, 1), 0 4px 8px rgba(0, 0, 0, 0.3) !important; */
 }
 
 .crome-dropdown-options,

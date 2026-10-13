@@ -500,7 +500,7 @@ function Subcontracting() {
 
         <section
           className="subcontracting-header"
-          data-aos="fade-up"
+          
         >
 
           <div>
@@ -530,7 +530,7 @@ function Subcontracting() {
 
         <section className="sc-stats">
 
-          <div className="sc-stat">
+          <div className="sc-stat" data-aos="zoom-in">
             <div className="sc-stat-icon blue">
               <FiPackage />
             </div>
@@ -541,7 +541,7 @@ function Subcontracting() {
             </div>
           </div>
 
-          <div className="sc-stat">
+          <div className="sc-stat" data-aos="zoom-out">
             <div className="sc-stat-icon orange">
               <FiClock />
             </div>
@@ -552,7 +552,7 @@ function Subcontracting() {
             </div>
           </div>
 
-          <div className="sc-stat">
+          <div className="sc-stat"data-aos="zoom-in">
             <div className="sc-stat-icon blue">
               <FiPackage />
             </div>
@@ -569,7 +569,7 @@ function Subcontracting() {
             </div>
           </div>
 
-          <div className="sc-stat">
+          <div className="sc-stat" data-aos="zoom-out">
             <div className="sc-stat-icon green">
               <FiCheckCircle />
             </div>
@@ -587,7 +587,10 @@ function Subcontracting() {
 
         <section
           className="subcontracting-card"
-          data-aos="fade-up"
+          data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="100"
+     data-aos-offset="0"
         >
 
           <div className="sc-toolbar">

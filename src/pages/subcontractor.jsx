@@ -226,6 +226,7 @@ function Subcontractor() {
         <section
           className="subcontractor-header"
           data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom"
         >
 
           <div>
@@ -255,7 +256,7 @@ function Subcontractor() {
 
         <section className="subcontractor-stats">
 
-          <div className="subcontractor-stat">
+          <div className="subcontractor-stat" data-aos="zoom-in-up">
 
             <div className="sub-stat-icon blue">
               <FiUsers />
@@ -269,7 +270,7 @@ function Subcontractor() {
           </div>
 
 
-          <div className="subcontractor-stat">
+          <div className="subcontractor-stat" data-aos="zoom-in-down">
 
             <div className="sub-stat-icon green">
               <FiCheckCircle />
@@ -283,7 +284,7 @@ function Subcontractor() {
           </div>
 
 
-          <div className="subcontractor-stat">
+          <div className="subcontractor-stat" data-aos="zoom-in-up">
 
             <div className="sub-stat-icon orange">
               <FiClock />
@@ -297,7 +298,7 @@ function Subcontractor() {
           </div>
 
 
-          <div className="subcontractor-stat">
+          <div className="subcontractor-stat" data-aos="zoom-in-down">
 
             <div className="sub-stat-icon red">
               <FiAlertCircle />
@@ -375,7 +376,10 @@ function Subcontractor() {
             {filteredSubcontractors.map((subcontractor) => (
 
               <article
-                className="vendor-card"
+                className="vendor-card" data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="0"
                 key={subcontractor.id}
               >
 
